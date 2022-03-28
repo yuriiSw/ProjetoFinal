@@ -50,12 +50,12 @@ include_once("../model/produtoModel.php");
       ?>
           <tr>
             <th scope="row"><?= $dado["idproduto"] ?></th>
-            <td><?= $codigoProduto["nomeproduto"] ?></td>
-            <td><?= $codigoProduto["valorproduto"] ?></td>
-            <td><?= $codigoProduto["generoproduto"] ?></td>
-            <td><?= $codigoProduto["qtdproduto"] ?></td>
-            <td><?= $codigoProduto["marcaproduto"] ?></td>
-            <td><?= $codigoProduto["categoriaproduto"] ?></td>
+            <td><?= $dado["nomeproduto"] ?></td>
+            <td><?= $dado["valorproduto"] ?></td>
+            <td><?= $dado["generoproduto"] ?></td>
+            <td><?= $dado["qtdproduto"] ?></td>
+            <td><?= $dado["marcaproduto"] ?></td>
+            <td><?= $dado["categoriaproduto"] ?></td>
             <td>
               <form action="../view/alterarformproduto.php" method="post">
 

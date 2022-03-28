@@ -1,5 +1,4 @@
 <?php
-
 include_once("../view/header.php");
 include_once("../model/conexao.php");
 include_once("../model/produtoModel.php");
@@ -42,12 +41,12 @@ include_once("../model/produtoModel.php");
       ?>
         <tr>
           <th scope="row"><?= $nomeProduto["idproduto"]; ?></th>
-          <td><?= $categoriaProduto["nomeproduto"] ?></td>
-          <td><?= $categoriaProduto["valorproduto"] ?></td>
-          <td><?= $categoriaProduto["generoproduto"] ?></td>
-          <td><?= $categoriaProduto["qtdproduto"] ?></td>
-          <td><?= $categoriaProduto["marcaproduto"] ?></td>
-          <td><?= $categoriaProduto["categoriaproduto"] ?></td>
+          <td><?= $nomeProduto["nomeproduto"] ?></td>
+          <td><?= $nomeProduto["valorproduto"] ?></td>
+          <td><?= $nomeProduto["generoproduto"] ?></td>
+          <td><?= $nomeProduto["qtdproduto"] ?></td>
+          <td><?= $nomeProduto["marcaproduto"] ?></td>
+          <td><?= $nomeProduto["categoriaproduto"] ?></td>
           <td>
             <form action="../view/alterarformproduto.php" method="POST">
               <input type="hidden" value="<?= $nomeProduto["idproduto"] ?>" name="idproduto">

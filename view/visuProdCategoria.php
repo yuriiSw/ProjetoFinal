@@ -34,7 +34,7 @@ include_once("../model/produtoModel.php");
     </thead>
     <tbody>
       <?php
-      $categoriaproduto = isset($_POST["categoriaProduto"]) ? $_POST["CategoriaProduto"] : "";
+      $categoriaproduto = isset($_POST["categoriaProduto"]) ? $_POST["categoriaProduto"] : "";
 
       if ($categoriaproduto) {
 

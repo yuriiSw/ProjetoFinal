@@ -9,6 +9,6 @@ $acesso= verificaAcesso($conn,$email,$senha);
 if($acesso === $email){
     header("Location:../view/indexAdm.php");
 }else{
-    header("Location: ../view/index.php");
+    header("Location: ../view/senhaerrada.html");
 }
 ?>

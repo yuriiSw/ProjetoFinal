@@ -1,5 +1,7 @@
 <?php
 include_once("header.php");
+include_once("../model/usuarioModel.php");
+usarAcesso();
 ?>
 
 <div class="container">

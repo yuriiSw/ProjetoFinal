@@ -11,6 +11,8 @@ h5{
     background: linear-gradient(#e1ebfd, #243b55);
   }
   
+navbar-brand
+
   .login-box {
     position: absolute;
     top: 50%;
@@ -169,3 +171,17 @@ h5{
     }
   }
   
+.container-fluid {
+    height: 100%;
+    width: 100%;
+    float: left;
+
+}
+
+
+
+
+
+
+
+
