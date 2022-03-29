@@ -10,6 +10,8 @@
     <title>Login Sistema</title>
 </head>
 <body>
+<img src="img/imglogin.png"
+>
 <div class="login-box">
   <h2>Login</h2>
 <form id="formlogin" action="../controler/liberaAcesso.php" method="post">

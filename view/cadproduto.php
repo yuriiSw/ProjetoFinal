@@ -1,11 +1,11 @@
 <?php
 include_once("header.php");
 ?>
-
-<div class="disabled">
-
+<div class="container">
+<br>
+    <br>
   <form class="row g-3" action="../controler/inserirCadastroProduto.php" method="Get">
-    <div class="col-md-5">
+  <div class="col-md-5">
       <label for="inputProduto" class="form-label">Nome do Produto</label>
       <input type="text" name="nomeproduto" class="form-control" id="inputProduto" placeholder="Insira o Nome do Produto" required>
     </div>

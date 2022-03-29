@@ -16,50 +16,38 @@ include_once("../model/usuarioModel.php");
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">SISTEMA DE CADASTRO DE PRODUTOS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="indexAdm.php">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            USUARIOS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../view/cadusuario.php">Cadastrar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-
-                            <li><a class="dropdown-item" href="../view/visuUsuCod.php">Pesquisar por Código</a></li>
-                            <li><a class="dropdown-item" href="../view/visuUsuNome.php">Pesquisar por Nome</a></li>
-                            <li><a class="dropdown-item" href="../view/visuUsuEmail.php">Pesquisar por E-mail</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PRODUTOS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../view/cadproduto.php">Cadastrar Produtos</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../view/visuProdCod.php">Visualizar por Código</a></li>
-                            <li><a class="dropdown-item" href="../view/visuProdNome.php">Visualizar por Gênero</a></li>
-                            <li><a class="dropdown-item" href="../view/visuProdCategoria.php">Visualizar por Categoria</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../view/indexAdm.php">HOME</a>
+          </li>
+          <li class="nav-item">
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown08">
+              <li><a class="dropdown-item" href="../view/cadusuario.php">Cadastrar</a></li>
+              <li><a class="dropdown-item" href="../view/visuUsuCod.php">Pesquisar por Código</a></li>
+              <li><a class="dropdown-item" href="../view/visuUsuNome.php">Pesquisar por Nome</a></li>
+              <li><a class="dropdown-item" href="../view/visuUsuEmail.php">Pesquisar por E-mail</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown08">
+              <li><a class="dropdown-item" href="../view/cadproduto.php">Cadastrar</a></li>
+              <li><a class="dropdown-item" href="../view/visuProdCod.php">Visualizar produto por Código</a></li>
+              <li><a class="dropdown-item" href="../view/visuProdNome.php">Visualizar produto por Gênero</a></li>
+              <li><a class="dropdown-item" href="../view/visuProdCategoria.php">Visualizar produto por Categoria</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

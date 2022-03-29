@@ -1,10 +1,12 @@
 <?php
-include_once("header.php");
+include_once("../view/header.php");
 include_once("../model/usuarioModel.php");
 usarAcesso();
 ?>
 
 <div class="container">
+<br>
+    <br> <br>
 <form class="row g-3" action="../controler/inserirCadastro.php" method="Get">
   <div class="col-md-12">
     <label for="inputNome" class="form-label">Nome</label>
