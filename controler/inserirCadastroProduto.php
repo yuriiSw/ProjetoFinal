@@ -7,7 +7,7 @@ include_once("../model/produtoModel.php");
 extract($_REQUEST,EXTR_OVERWRITE);
 
 
-if(inserirProdutos($conn,$idproduto,$nomeproduto,$valorproduto,$generoproduto,$qtdproduto,$marcaproduto,$categoriaproduto)){
+if(inserirProdutos($conn,$nomeproduto,$valorproduto,$generoproduto,$qtdproduto,$marcaproduto,$categoriaproduto)){
 	echo("O Produto foi cadastrado com sucesso !!!");
 }else{
 	echo("O Produto está incompleto, tente novamente !!!");

@@ -1,17 +1,32 @@
+#container-da-imagem {
+    width: 200px;
+    position: relative;
+}
+#container-da-imagem img {
+    width: 200px;
+    height: 200px;
+}
+img {
+    width: 100%
+}
+
 html {
     height: 100%;
   }
 h5{
     color: white
 }
-  body {
+body {
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: linear-gradient(#e1ebfd, #243b55);
+   
   }
   
-navbar-brand
+#container-fluid {
+    background-color: #243b55;
+    
+}
 
   .login-box {
     position: absolute;
@@ -177,11 +192,3 @@ navbar-brand
     float: left;
 
 }
-
-
-
-
-
-
-
-

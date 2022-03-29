@@ -3,7 +3,24 @@ include_once("../view/header.php");
 include_once("../model/conexao.php");
 include_once("../model/usuarioModel.php");
 ?>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 <div class="container mt-5">
   <form action="#" method="Post" class="row row-cols-auto   justify-content-lg-center g-3 align-items-center">
     <div class="col-8">
@@ -14,16 +31,17 @@ include_once("../model/usuarioModel.php");
       </div>
     </div>
 
-    <div class="col-22">
+    <div class="limites">
       <button type="submit" class="btn btn-primary">Pesquisar</button>
     </div>
   </form>
-
-
-
-  <table class="table mt-5">
+  <br>
+  <br>
+  <br>
+  <br>
+  <table class="limiter">
     <thead>
-      <tr>
+      <tr class="table100-head">
         <th scope="col">Codigo</th>
         <th scope="col">Nome</th>
         <th scope="col">Email</th>
@@ -121,3 +139,13 @@ deletarUsuarioModal.addEventListener('show.bs.modal',function(event){
 include_once("../view/footer.php")
 
 ?>
+  <!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
