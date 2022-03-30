@@ -4,7 +4,7 @@ include_once("../view/header.php");
 include_once("../model/conexao.php");
 include_once("../model/produtoModel.php");
 ?>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
   <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -36,17 +36,20 @@ include_once("../model/produtoModel.php");
       <button type="submit" class="btn btn-primary">Pesquisar</button>
     </div>
   </form>
+  <br>
+  <br>
+  <br>
+  <br>
   <table class="limiter">
     <thead>
-      <tr>
         <tr class="table100-head">
         <th scope="col">Código</th>
         <th scope="col">Nome</th>
         <th scope="col">Valor</th>
+        <th scope="col">Tipo de Produto</th>
         <th scope="col">Quantidade</th>
-        <th scope="col">Genero</th>
-        <th scope="col">Marca</th>
         <th scope="col">Categoria</th>
+        <th scope="col">Marca</th>
         <th scope="col">Alterar</th>
         <th scope="col">Excluir</th>
       </tr>

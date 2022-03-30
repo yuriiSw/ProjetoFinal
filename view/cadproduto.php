@@ -1,11 +1,14 @@
 <?php
 include_once("header.php");
+include_once("../model/usuarioModel.php");
+usarAcesso();
 ?>
+
 <div class="container">
 <br>
-    <br>
+    <br> <br>
   <form class="row g-3" action="../controler/inserirCadastroProduto.php" method="Get">
-  <div class="col-md-5">
+    <div class="col-md-5">
       <label for="inputProduto" class="form-label">Nome do Produto</label>
       <input type="text" name="nomeproduto" class="form-control" id="inputProduto" placeholder="Insira o Nome do Produto" required>
     </div>
@@ -13,25 +16,23 @@ include_once("header.php");
       <label for="inputValor" class="form-label">Valor do Produto</label>
       <input type="text" name="valorproduto" class="form-control" id="inputValor" placeholder="$..." required>
     </div>
-    <div class="col-5">
-      <label for="inputGenero" class="form-label">Genero do Produto</label>
-      <input type="text" name="generoproduto" class="form-control" id="inputGenero" placeholder="Insira o Gênero do Produto" required>
-    </div>
+    
     <div class="col-5">
       <label for="inputQuantidade" class="form-label">Quantidade de Produtos</label>
-      <input type="number" name="qtdproduto" class="form-control" id="inputQuantidade" placeholder="Quantidade do Produto" required>
+      <input type="text" name="qtdproduto" class="form-control" id="inputQuantidade" placeholder="Quantidade do Produto" required>
     </div>
     <div class="col-5">
       <label for="inputMarca" class="form-label">Marca do Produto</label>
       <input type="text" name="marcaproduto" class="form-control" id="inputMarca" placeholder="Insira a Marca do Produto" required>
     </div>
-    <div class="col-md-5">
+    <div class="col-5">
       <label for="inputCategoria" class="form-label">Categoria do Produto</label>
       <input type="text" name="categoriaproduto" class="form-control" id="inputCategoria" placeholder="Insira a Categoria do Produto" required>
     </div>
     <div class="col-md-5">
     <label for="inputGenero" class="form-label">Tipo do Produto</label>
     <select id="inputGenero" name="generoproduto"  class="form-select">
+        <option >Escolha um Tipo....</option>
         <option value="Eletrodómestico">Eletrodómestico</option>
         <option value="Eletroeletronico">Eletroeletronico</option>
         <option value="Tv's">Tv's</option>

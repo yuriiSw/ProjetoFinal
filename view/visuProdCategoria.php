@@ -31,19 +31,22 @@ include_once("../model/produtoModel.php");
         <input type="text" name="categoriaProduto" class="form-control" id="inlineFormInputGroupUsername" placeholder="Categoria do produto">
       </div>
     </div>
-    <div class="limites">
+    <div class="limete">
       <button type="submit" class="btn btn-primary">Pesquisar</button>
     </div>
   </form>
+  <br>
+  <br>
+  <br>
+  <br>
   <table class="limiter">
     <thead>
-      <tr>
         <tr class="table100-head">
         <th scope="col">Código</th>
         <th scope="col">Nome</th>
         <th scope="col">Valor</th>
+        <th scope="col">Tipo de Produto</th>
         <th scope="col">Quantidade</th>
-        <th scope="col">Genero</th>
         <th scope="col">Marca</th>
         <th scope="col">Categoria</th>
         <th scope="col">Alterar</th>

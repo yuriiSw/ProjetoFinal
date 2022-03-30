@@ -21,10 +21,7 @@ $informa = visuProdutoCodigo($conn,$idproduto);
       <label for="inputValor" class="form-label">Valor</label>
       <input type="number" name="valorproduto" value="<?=$informa["valorproduto"]?>"class="form-control" id="inputValor">
     </div>
-    <div class="col-4">
-      <label for="inputGenero" class="form-label">Gênero do Produto</label>
-      <input type="text" name="generoproduto" value="<?=$informa["generoproduto"]?>" class="form-control" id="inputGenero">
-    </div>
+   
     <div class="col-4">
       <label for="inputQtd" class="form-label">Quantidade do Produto</label>
       <input type="number" name="qtdproduto" value="<?=$informa["qtdproduto"]?>" class="form-control" id="inputQtd" placeholder="000">

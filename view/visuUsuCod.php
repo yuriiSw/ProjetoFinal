@@ -42,9 +42,9 @@ include_once("../model/usuarioModel.php");
   <table class="limiter">
     <thead>
       <tr class="table100-head">
-        <th scope="col">Codigo</th>
+      <th scope="col">Código</th>
         <th scope="col">Nome</th>
-        <th scope="col">Email</th>
+        <th scope="col">E-mail</th>
         <th scope="col">Fone</th>
         <th scope="col">Alterar</th>
         <th scope="col">Excluir</th>
