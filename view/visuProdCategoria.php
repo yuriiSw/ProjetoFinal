@@ -4,24 +4,26 @@ include_once("../view/header.php");
 include_once("../model/conexao.php");
 include_once("../model/produtoModel.php");
 ?>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="css/util.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+    <link rel="icon" type="imagem/png" href="img/icon2.png" /> <!--ICON DA PGN-->
+
 <div class="container mt-5">
   <form action="#" method="Post" class="row row-cols-auto   justify-content-lg-center g-3 align-items-center">
     <div class="col-8">
@@ -41,7 +43,7 @@ include_once("../model/produtoModel.php");
   <br>
   <table class="limiter">
     <thead>
-        <tr class="table100-head">
+      <tr class="table100-head">
         <th scope="col">Código</th>
         <th scope="col">Nome</th>
         <th scope="col">Valor</th>
@@ -62,12 +64,12 @@ include_once("../model/produtoModel.php");
         $dado = visuProdutoCategoria($conn, $categoriaproduto);
 
         foreach ($dado as $categoriaProduto) :
-      ?>
+          ?>
           <tr>
             <th scope="row"><?= $categoriaProduto["idproduto"] ?></th>
             <td><?= $categoriaProduto["nomeproduto"] ?></td>
             <td><?= $categoriaProduto["valorproduto"] ?></td>
-            <td><?= $categoriaProduto["generoproduto"] ?></td>
+            <td><?= $categoriaProduto["tipoproduto"] ?></td>
             <td><?= $categoriaProduto["qtdproduto"] ?></td>
             <td><?= $categoriaProduto["marcaproduto"] ?></td>
             <td><?= $categoriaProduto["categoriaproduto"] ?></td>
@@ -88,7 +90,7 @@ include_once("../model/produtoModel.php");
             </td>
 
           </tr>
-      <?php
+          <?php
         endforeach;
       }
       ?>

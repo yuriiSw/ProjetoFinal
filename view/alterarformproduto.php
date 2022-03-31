@@ -35,9 +35,9 @@ $informa = visuProdutoCodigo($conn,$idproduto);
       <input type="text" name="marcaproduto" value="<?=$informa["marcaproduto"]?>" class="form-control" id="inputMarca" placeholder="Samsung,LG,Brastemp,Eletrolux,Mondial">
     </div>
     <div class="col-md-6">
-    <label for="inputGenero" class="form-label">Tipo do Produto</label>
-    <select id="inputGenero" name="generoproduto"  class="form-select">
-    <option selected value="<?= $informa["generoproduto"] ?>"> <?= $informa["generoproduto"] ?> </option>
+    <label for="inputTipo" class="form-label">Tipo do Produto</label>
+    <select id="inputTipo" name="tipoproduto"  class="form-select">
+    <option selected value="<?= $informa["tipoproduto"] ?>"> <?= $informa["tipoproduto"] ?> </option>
         <option value="Eletrodómestico">Eletrodómestico</option>
         <option value="Eletroeletronico">Eletroeletronico</option>
         <option value="Tv's">Tv's</option>

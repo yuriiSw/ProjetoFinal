@@ -30,8 +30,8 @@ usarAcesso();
       <input type="text" name="categoriaproduto" class="form-control" id="inputCategoria" placeholder="Insira a Categoria do Produto" required>
     </div>
     <div class="col-md-5">
-    <label for="inputGenero" class="form-label">Tipo do Produto</label>
-    <select id="inputGenero" name="generoproduto"  class="form-select">
+    <label for="inputTipo" class="form-label">Tipo do Produto</label>
+    <select id="inputTipo" name="Tipoproduto"  class="form-select">
         <option >Escolha um Tipo....</option>
         <option value="Eletrodómestico">Eletrodómestico</option>
         <option value="Eletroeletronico">Eletroeletronico</option>

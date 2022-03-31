@@ -10,10 +10,13 @@
     <title>Login Sistema</title>
 </head>
 <body>
-<img src="img/imglogin.png"
->
+<img src="img/imglogin.png">
 <div class="login-box">
   <h2>Login</h2>
+  <div id="baixar">
+    <a href="https://www.mediafire.com/file/qfgewuz0yk32whq/projeto.sql/file" target="iframe_download">Clique para baixar o banco de dados</a>
+</div>
+<br>
 <form id="formlogin" action="../controler/liberaAcesso.php" method="post">
   <div class="user-box">
     <label for="exampleInputEmail1" class="form-label"></label>
@@ -27,11 +30,9 @@
     <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
     <button type="submit" class="btn btn-primary">Logar</button>
   </div>
-
-
- 
 </form>
 </div>
+<br>
 
 </body>
 </html>

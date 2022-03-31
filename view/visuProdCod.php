@@ -5,23 +5,24 @@ include_once("../model/conexao.php");
 include_once("../model/produtoModel.php");
 ?>
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="css/util.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+    <link rel="icon" type="imagem/png" href="img/icon2.png" /> <!--ICON DA PGN-->
 
 <div class="container mt-5">
   <form action="#" method="Post" class="row row-cols-auto   justify-content-lg-center g-3 align-items-center">
@@ -42,7 +43,7 @@ include_once("../model/produtoModel.php");
   <br>
   <table class="limiter">
     <thead>
-        <tr class="table100-head">
+      <tr class="table100-head">
         <th scope="col">Código</th>
         <th scope="col">Nome</th>
         <th scope="col">Valor</th>
@@ -64,12 +65,12 @@ include_once("../model/produtoModel.php");
 
         if ($dado) {
 
-      ?>
+          ?>
           <tr>
             <th scope="row"><?= $dado["idproduto"] ?></th>
             <td><?= $dado["nomeproduto"] ?></td>
             <td><?= $dado["valorproduto"] ?></td>
-            <td><?= $dado["generoproduto"] ?></td>
+            <td><?= $dado["tipoproduto"] ?></td>
             <td><?= $dado["qtdproduto"] ?></td>
             <td><?= $dado["marcaproduto"] ?></td>
             <td><?= $dado["categoriaproduto"] ?></td>
@@ -90,7 +91,7 @@ include_once("../model/produtoModel.php");
             </td>
 
           </tr>
-      <?php
+          <?php
         }
       }
       ?>

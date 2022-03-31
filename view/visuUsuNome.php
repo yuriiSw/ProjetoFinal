@@ -21,6 +21,8 @@ include_once("../model/usuarioModel.php");
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+    <link rel="icon" type="imagem/png" href="img/icon2.png" /> <!--ICON DA PGN-->
+
 <div class="container mt-5">
   <form action="#" method="Post" class="row row-cols-auto   justify-content-lg-center g-3 align-items-center">
     <div class="col-8">

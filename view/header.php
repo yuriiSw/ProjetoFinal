@@ -43,7 +43,7 @@ include_once("../model/usuarioModel.php");
             <ul class="dropdown-menu" aria-labelledby="dropdown08">
               <li><a class="dropdown-item" href="../view/cadproduto.php">Cadastrar</a></li>
               <li><a class="dropdown-item" href="../view/visuProdCod.php">Visualizar produto por Código</a></li>
-              <li><a class="dropdown-item" href="../view/visuProdNome.php">Visualizar produto por Gênero</a></li>
+              <li><a class="dropdown-item" href="../view/visuProdNome.php">Visualizar produto por Nome</a></li>
               <li><a class="dropdown-item" href="../view/visuProdCategoria.php">Visualizar produto por Categoria</a></li>
             </ul>
           </li>

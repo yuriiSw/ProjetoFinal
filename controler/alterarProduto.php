@@ -5,7 +5,7 @@ include_once("../view/header.php");
 
 extract($_REQUEST, EXTR_OVERWRITE);
 
-if(alterarProduto($conn,$idproduto,$nomeproduto,$valorproduto,$generoproduto,$qtdproduto,$marcaproduto,$categoriaproduto)){
+if(alterarProduto($conn,$idproduto,$nomeproduto,$valorproduto,$tipoproduto,$qtdproduto,$marcaproduto,$categoriaproduto)){
   echo("Dados Produto alterados com sucesso.");
 }else{
   echo("Dados Produto não alterados");
